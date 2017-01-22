@@ -1,0 +1,10 @@
+<div class="container">
+  <% @posts.each do |post| %>
+  <div class="row">
+    <div class="col-md-12">
+      <center><span class="title"><a href="/posts/<%= post.id %>"><%= post.title %></a></span></center>
+      <center><span class="author">by <%= post.author.username %></span></center>
+    </div>
+  </div>
+  <% end %>
+</div>
